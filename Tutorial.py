@@ -1,8 +1,9 @@
 __author__ = 'charan'
 '''
 print("I hope This Works")
-name = "Charan Teja"
+name = "Charanl Teja4"
 foods = ['bacon', 'tuna', 'ham', 'beef']
+
 
 def function():
     print("This is from function")
@@ -30,7 +31,7 @@ a = 7823
 
 
 def corn():
-    a=125
+    a = 125
     print(a)
 
 
@@ -50,28 +51,43 @@ def dumb_sentence(name="Charan", action='ate', item='tuna'):
 
 
 def health_calendar(age, apples_ate, cigs_smoked):
-    answer = (100-age) + (apples_ate * 3.5) - (cigs_smoked * 2)
+    answer = (100 - age) + (apples_ate * 3.5) - (cigs_smoked * 2)
     print(answer)
+
+
 if name is "Charan":
-    print("Hey "+name)
+    print("Hey " + name)
 elif name is "Charan Teja1":
-    print("Welcome :D :* "+name)
+    print("Welcome :D :* " + name)
+    for f in reversed(foods):
+        print(f)
+        print(len(f))
     for f in foods[:3]:
         print(f)
         print(len(f))
+    for f in foods[1:]:
+        print(f)
+        print(len(f))
 elif name is "Charan Teja2":
-    print("Welcome :D :* "+name)
-    for x in range(5,50,5):
+    print("Welcome :D :* " + name)
+    for x in range(5, 50, 5):
+        print(x)
+    for x in range(5, 10):
+        print(x)
+    for x in range(15,10,-1):
+        print(x)
+    for x in range(21):
         print(x)
 elif name is "Charan Teja3":
-    c =5
+    c = 5
     while c < 10:
-       print(c)
-       c +=1
+        print(c)
+        c += 1
 elif name is "Charan Teja4":
     magicNumber = 16
-    for n in range(101):
-        if n%4 is 0:
+    for n in range(1,101):
+        print(n)
+        if n % 4 is 0:
             print("Magic Number is ", n)
             break
         else:
@@ -79,21 +95,21 @@ elif name is "Charan Teja4":
 elif name is "Charan Teja5":
     magicNumber = 16
     for n in range(101):
-        if n%4 is 0:
+        if n % 4 is 0:
             print(n)
 elif name is "Charan Teja6":
     numbersTaken = [1, 5, 18, 13, 25]
 
-    print("Here are the numbers that are stil available:")
-    for n in range(1,31):
+    print("Here are the numbers that are still available:")
+    for n in range(1, 31):
         if n in numbersTaken:
             continue
         print(n)
-elif name is "Charan Teja7":
+elif name is "Charan Teja":
     function()
     bitcoin_to_usd(12.1)
-    print(allowed_datin_age(23),"is your girls min agee")
-    get_gender('m')
+    print(allowed_datin_age(23), "is your girls min age")
+    get_gender()
     corn()
     fudge()
     dumb_sentence()
@@ -103,14 +119,12 @@ elif name is "Charan Teja7":
     add_numbers(3)
     add_numbers(3, .3, 2000.6)
     add_numbers(3, 2, 1000)
-    charan_data=[27, 20, 0]
+    charan_data = [27, 20, 0]
     # health_calendar(charan_data[0], charan_data[1], charan_data[2])
     health_calendar(*charan_data)
-elif name is "Charan Teja":
 
 else:
-    print("Hey your not "+name)
-
+    print("Hey your not " + name)
 
 groceries = {'cereal', 'milk', 'egg', 'beer', 'duct tape', 'lotion', 'beer'}
 print(groceries)
@@ -120,17 +134,20 @@ if 'milk' in groceries:
 else:
     print("oh, yeah you need milk")
 
-
 classmates = {'Tony': ' Cool but smells', 'Charan': ' Awesome Dude', 'Lucy': ' Too many questions'}
 print(classmates)
 print(classmates['Charan'])
 for k, v in classmates.items():
     print(k + v)
 
-import tuna
 import random
-
-tuna.fish()
-
 x = random.randrange(1, 1000)
-print(x)'''
+print(x)
+
+import File_write_read
+#string = 'Writing some stuff in my text file\n'
+File_write_read.file_write('Writing some stuff in my text file\n')
+File_write_read.file_read()
+
+'''
+print('charan is a good boy'.replace('a', 'i'))

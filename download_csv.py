@@ -17,3 +17,4 @@ def download_stock_data(csv_url):
     fx.close()
 
 download_stock_data(yahoo_url)
+
